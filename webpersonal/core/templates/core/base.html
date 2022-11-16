@@ -29,7 +29,11 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
+                    
                     <ul class="navbar-nav ml-auto">
+                        <li style="--clr:#00ade1">
+                            <a href="#" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'home' %}">Portada</a>
                         </li>
@@ -61,6 +65,7 @@
                 </div>
         </header>
         <!-- Contenido -->
+
     <div class="container">
 
         {% block content %}{% endblock %}
@@ -72,34 +77,44 @@
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="col-lg-2 col-md-10 mx-auto">
+                        
                         <ul class="list-inline text-center">
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
+                            <div class="card">
+                                <img src="/static/core/img/image.jpg" alt="tree" />
+                                <div class="details">
+                                    <h3>Alberto Jiménez Serrano</h3>
+                                        <p>Ingeniero Matemático</p>
+                                        <ul class="list-inline text-center">
+                                            <li class="list-inline-item">
+                                                <a href="mailto:aserrjim@myuax.com" target="_blank">
+                                                    <span class="fa-stack fa-lg">
+                                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="https://github.com/Albertojserr" target="_blank">
+                                                    <span class="fa-stack fa-lg">
+                                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="https://youtube.com" target="_blank">
+                                                    <span class="fa-stack fa-lg">
+                                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                                        <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <p class="copyright">Copyright &copy; 2022</p>
+                                </div>
+                            </div>
                         </ul>
-                        <p class="copyright text-muted">Copyright &copy; 2022 · Alberto Jiménez (Ingeniero Matemático) </p>
                     </div>
                 </div>
             </div>
