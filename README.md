@@ -23,8 +23,6 @@ su postgres
 
 psql
 
-alter user postgres with password 'albertopostgres';
-
 CREATE DATABASE railway WITH OWNER postgres;
 
 python manage.py migrate (esto al copiarlo en un nuevo dispositivo)
